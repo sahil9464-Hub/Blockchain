@@ -1,0 +1,18 @@
+// SPDX-License-Identifier: MIT
+pragma solidity ^0.8.20;
+
+contract LargestNumber {
+    function largest(uint a, uint b, uint c) public pure returns (uint) {
+        uint largestNum = a;
+
+        if (b > largestNum) {
+            largestNum = b;
+        }
+
+        if (c > largestNum) {
+            largestNum = c;
+        }
+
+        return largestNum;
+    }
+}
